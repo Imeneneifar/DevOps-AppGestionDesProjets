@@ -5,8 +5,7 @@ pipeline {
 
         stage('1 - Recuperation du code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Alaa-Rami/DevOps-AppGestionDesProjets.git'
+                checkout scm
             }
         }
 
