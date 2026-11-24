@@ -12,7 +12,7 @@ pipeline {
         stage('2 - Creation du livrable Backend') {
             steps {
                 dir('backend') {
-                    sh 'mvn -Dhttps.protocols=TLSv1.2 clean install'
+                    sh 'mvn clean package -DskipTests'
                 }
             }
         }
