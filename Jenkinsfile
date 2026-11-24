@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = 'tonidentifiant/studentmang-app'
+        IMAGE = 'imenneifar/studentmang-app'
     }
 
     stages {
